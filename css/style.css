@@ -1,6 +1,6 @@
 /*************************************************
-    GENERAL STYLES
- *************************************************/
+GENERAL STYLES
+*************************************************/
 *,
 *::before,
 *::after {
@@ -42,8 +42,8 @@ img {
 }
 
 /************************************************
-    UTILITIES
- ************************************************/
+UTILITIES
+************************************************/
 
 /* LAYOUT */
 .container {
@@ -67,8 +67,8 @@ img {
 }
 
 /************************************************
-    SITE SECTIONS
- ************************************************/
+SITE SECTIONS
+************************************************/
 
 /* HEADER */
 .site-header {
@@ -125,15 +125,9 @@ img {
 }
 
 /************************************************
-    SOLUZIONE RESPONSIVE
- ************************************************/
+SOLUZIONE RESPONSIVE
+************************************************/
 
- @media screen and (max-width: 768px) {
-
-    .container {
-        width: 90%;
-    }
-}
 
 @media screen and (max-width: 480px) {
     
@@ -146,19 +140,19 @@ img {
         align-items: center;
         gap: 20px;
     }
-
+    
     .lessons .col,
     .steps .col,
     .why-us .col-left,
     .why-us .col-right
-     {
+    {
         width: 100%;
     }
-
+    
     .steps {
         margin-bottom: 0;
     }
-
+    
     .why-us {
         background-color: black;
         margin-bottom: 0;
@@ -166,3 +160,36 @@ img {
     }
 }
 
+@media screen and (max-width: 768px) {
+    
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1160px) and (min-width: 769px) {
+    
+    h1 {
+        color: #ff8f00;
+    }
+    h2,
+    h3 {
+    color: lightblue;
+}
+    .steps h2,
+    .steps h3 {
+        color: #232946;
+    } 
+
+    .container {
+        width: 90%;
+        border: 2px solid lightblue;
+        border-radius: 10px;
+        padding: 2rem;
+        background-color: #ae030342;
+    }
+
+    .steps {
+        background-color: #ff8f00;
+    }
+}
